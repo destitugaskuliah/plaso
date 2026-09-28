@@ -2051,3 +2051,11 @@ attribute_mappings:
 - name: 'recorded_time'
   description: 'Recorded Time'
 place_holder_event: true
+---
+data_type: 'sysmon:xml:event'
+
+attribute_mappings:
+- name: 'recorded_time'
+  description: 'Event Time'
+
+place_holder_event: false

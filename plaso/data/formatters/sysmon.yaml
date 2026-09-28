@@ -1,0 +1,29 @@
+---
+type: 'conditional'
+data_type: 'sysmon:xml:event'
+
+message:
+- 'Event ID: {event_id}'
+- 'Type: {event_type}'
+- 'Image: {image}'
+- 'CommandLine: {command_line}'
+- 'User: {username}'
+- 'TargetImage: {target_image}'
+- 'TargetObject: {target_object}'
+- 'TargetFilename: {target_filename}'
+- 'Destination IP: {destination_ip}'
+- 'Destination Port: {destination_port}'
+- 'Computer: {computer_name}'
+- 'EventRecordID: {event_record_id}'
+
+separator: ', '
+
+short_message:
+- 'Sysmon Event ID {event_id}'
+- '{event_type}'
+- '{image}'
+- '{command_line}'
+
+short_source: 'SYSMON'
+
+source: 'Microsoft-Windows-Sysmon'
